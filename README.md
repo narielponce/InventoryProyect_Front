@@ -1,2 +1,2 @@
-# Owner-avatar-InventoryProyect_Front
+# InventoryProyect_Front
 FrontEnd proyecto inventario
