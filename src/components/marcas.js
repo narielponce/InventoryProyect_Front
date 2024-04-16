@@ -13,7 +13,7 @@ const Marcas = () => {
     const handleCloseModal = () => setShowModal(false);
 
     useEffect(() => {
-        fetch('http://localhost:8080/api/v1/branchs')
+        fetch('http://localhost:8080/api/v1/brands')
             .then(response => response.json())
             .then(data => setMarcas(data))
             .catch(error => console.error('Error fetching data:', error));
@@ -34,12 +34,12 @@ const Marcas = () => {
                 </thead>
                 <tbody>
                     {marcas.map(marca => (
-                        <tr key={marca.idBranch}>
-                            <td>{marca.idBranch}</td>
+                        <tr key={marca.idBrand}>
+                            <td>{marca.idBrand}</td>
                             <td>{marca.name}</td>
                             <td>{marca.description}</td>
-                            <td><a href={`editar/${marca.idBranch}`}><FaEdit /></a></td>
-                            <td><a href={`eliminar/${marca.idBranch}`}><FaTrash /></a></td>
+                            <td><a href={`editar/${marca.idBrand}`}><FaEdit /></a></td>
+                            <td><a href={`eliminar/${marca.idBrand}`}><FaTrash /></a></td>
                         </tr>
                     ))}
                 </tbody>

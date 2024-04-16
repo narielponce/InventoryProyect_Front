@@ -43,11 +43,10 @@ const Productos = () => {
                             <td>{producto.idProduct}</td>
                             <td>{producto.code}</td>
                             <td>{producto.serial}</td>
-                            <td>{producto.branch.name}</td>
-                            <td>{producto.categorie.name}</td>
+                            <td>{producto.brand.name}</td>
+                            <td>{producto.category.name}</td>
                             <td>{producto.description}</td>
                             <td>{producto.initialStock}</td>
-                            <td>{producto.location.name}</td>
                             <td><a href={`editar/${producto.idProduct}`}><FaEdit /></a></td>
                             <td><a href={`eliminar/${producto.idProduct}`}><FaTrash /></a></td>
                         </tr>
